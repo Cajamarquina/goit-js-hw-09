@@ -2,6 +2,9 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import Notiflix from 'notiflix';
 
+
+let countdownInterval;
+
     // Convert milliseconds to days, hours, minutes, and seconds
     function convertMs(ms) {
       const second = 1000;
@@ -72,3 +75,4 @@ import Notiflix from 'notiflix';
         }
       },
     });
+    
