@@ -58,7 +58,7 @@ let countdownInterval;
 
         if (selectedDate <= currentDate) {
           flatpickrInstance.clear();
-          Notiflix.Notify.warning('Please choose a date in the future');
+          Notiflix.Notify.failure('Please choose a date in the future');
           document.querySelector('[data-start]').disabled = true;
         } else {
           document.querySelector('[data-start]').disabled = false;
@@ -75,4 +75,4 @@ let countdownInterval;
         }
       },
     });
-    
+
