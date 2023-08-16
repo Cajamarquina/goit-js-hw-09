@@ -36,6 +36,7 @@ function updateCountdownTimer(targetDate) {
     document.querySelector('[data-minutes]').textContent = '00';
     document.querySelector('[data-seconds]').textContent = '00';
     Notiflix.Notify.success('Countdown has ended.');
+    document.querySelector('#datetime-picker').disabled = false; // Enable input
   } else {
     const { days, hours, minutes, seconds } = convertMs(timeRemaining);
     document.querySelector('[data-days]').textContent = addLeadingZero(days);
