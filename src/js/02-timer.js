@@ -3,7 +3,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import Notiflix from 'notiflix';
 
 let countdownInterval;
-let selectedDate;
+let selectedDate = null;
 
 // Convert milliseconds to days, hours, minutes, and seconds
 function convertMs(ms) {
